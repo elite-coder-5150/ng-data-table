@@ -1,0 +1,9 @@
+<div>
+    <input
+        type="text"
+        placeholder="Search..."
+        [(ngModel)]="search"
+        (input)="onSearch(query)"/>
+
+    <ng-search-results [results]="searchResults"></ng-search-results>
+</div>
