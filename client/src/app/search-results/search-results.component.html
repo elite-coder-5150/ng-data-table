@@ -1,0 +1,11 @@
+<div *ngIf="results.length > 0">
+    <h3>Search Results</h3>
+    <ul>
+        <li *ngFor="let result of results">
+            {{ result.name }}
+        </li>
+    </ul>
+</div>
+<div *ngIf="results.length === 0 && query.length > 0">
+    <p>No results found</p>
+</div>
