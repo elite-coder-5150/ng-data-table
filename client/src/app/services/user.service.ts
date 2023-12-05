@@ -6,4 +6,8 @@ import { Injectable } from '@angular/core';
 export class UserService {
 
   constructor() { }
+
+  generateUserId(min: number, max: number): number {
+    return Math.random() * (max - min) + min;
+  }
 }
