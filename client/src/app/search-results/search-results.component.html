@@ -2,7 +2,9 @@
     <h3>Search Results</h3>
     <ul>
         <li *ngFor="let result of results">
-            {{ result.name }}
+            <div class="title">{{ result.title }}</div>
+            <p class="description">{{ result.description }}</p>
+            <div class="url">{{ result.url }}</div>
         </li>
     </ul>
 </div>
