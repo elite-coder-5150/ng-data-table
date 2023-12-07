@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-
+import { SearchResults } from '../models/search-results';
 @Component({
   selector: 'ng-search-results',
   templateUrl: './search-results.component.html',
@@ -8,5 +8,17 @@ import { Component, Input } from '@angular/core';
 export class SearchResultsComponent {
   @Input() results: any[] = [];
   @Input() query: string = '';
-  @Input() searchResults: string[] = [];
+  // @Input() searchResults: SearchResults[] = {
+  //   title: '',
+  //   description: '',
+  //   url: ''
+  // }
+
+  searchResults: SearchResults = {
+    title: '',
+    description: '',
+    url: ''
+
+  }
+
 }
