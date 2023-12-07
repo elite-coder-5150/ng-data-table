@@ -1,1 +1,37 @@
-<p>user-table works!</p>
+<table class="user-table">
+    <thead>
+        <tr>
+            <td>
+                <ng-custom-checkbox></ng-custom-checkbox>
+                Name
+            </td>
+            <th>status</th>
+            <th>email</th>
+            <th>teams</th>
+            <th><!----- needs to be empty -----></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><ng-custom-checkbox></ng-custom-checkbox></td>
+            <td>olevia rhey</td>
+            <td>
+                <div class="badge">
+                    <div class="online-status"></div>
+                    active
+                </div>
+            </td>
+            <td>o.rhey@untitled.comtd>
+            <td>
+                <ul class="teams-list">
+                    <li class="list-item prouct">product</li>
+                    <li class="list-item ui-ux">UI/UX</li>
+                </ul>
+            </td>
+            <td></td>
+        </tr>
+    </tbody>
+    <footer class="table-footer">
+        <ng-pagination></ng-pagination>
+    </footer>
+</table>
