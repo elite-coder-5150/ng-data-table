@@ -1,0 +1,24 @@
+@import "vars";
+
+.badge {
+    padding: 8px 7px;
+    
+    &.active {
+        background: $clr-active-badge;
+        color: $clr-active-text
+    }
+
+    .online-status {
+        width: 6px;
+        height: 6px;
+        border-radius: 3px;
+
+        &.active {
+            background: $clr-active-indicator;
+        }
+
+        &.inactive {
+            background: darken($clr-active-indicator, 20%);
+        }
+    }
+}
