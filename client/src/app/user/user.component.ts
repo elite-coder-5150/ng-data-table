@@ -16,5 +16,7 @@ export class UserComponent {
     return userId;
   }
 
-
+  getAllUsers() {
+    
+  }
 }
