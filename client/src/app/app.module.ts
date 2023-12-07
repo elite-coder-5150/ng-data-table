@@ -12,6 +12,7 @@ import { SearchComponent } from './search/search.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SearchFormComponent } from './search-form/search-form.component';
+import { IsCheckedDirective } from './directives/is-checked.directive';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +23,8 @@ import { SearchFormComponent } from './search-form/search-form.component';
     UserTableComponent,
     SearchResultsComponent,
     SearchComponent,
-    SearchFormComponent
+    SearchFormComponent,
+    IsCheckedDirective
   ],
   imports: [
     BrowserModule,
