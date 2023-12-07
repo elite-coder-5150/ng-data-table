@@ -8,6 +8,11 @@
         </li>
     </ul>
 </div>
+
+<div *ngIf="totalItems > 10">
+    <ng-pagination></ng-pagination>
+</div>"
+
 <div *ngIf="results.length === 0 && query.length > 0">
     <p>No results found</p>
 </div>
