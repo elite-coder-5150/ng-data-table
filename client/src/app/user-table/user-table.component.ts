@@ -9,8 +9,9 @@ import { of } from 'rxjs';
   styleUrls: ['./user-table.component.scss']
 })
 export class UserTableComponent implements OnInit {
-  user: User[] = [];
+  users: User[] = [];
   editingUser: boolean = false;
+  
   currentUser: User = {
     id: 0,
       f_name: '',
@@ -29,7 +30,7 @@ export class UserTableComponent implements OnInit {
   }
 
   getUsers(): User[] {
-    return this.user;
+    return this.users;
   }
 
   addUser() {
@@ -64,7 +65,11 @@ export class UserTableComponent implements OnInit {
   loadUsers() {
     this.userService.getUsers()
       .pipe(
-        tap(() => {}), catchError(error => {
+        tap((users) => {
+          if (this.users.length) { 
+            this.users = users;
+          }
+        }), catchError(error => {
           console.error(error);
           return of(null)
         })
