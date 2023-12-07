@@ -8,6 +8,7 @@ import { SearchResults } from '../models/search-results';
 export class SearchResultsComponent {
   @Input() results: any[] = [];
   @Input() query: string = '';
+  @Input() totalItems: number = 0;
   // @Input() searchResults: SearchResults[] = {
   //   title: '',
   //   description: '',
