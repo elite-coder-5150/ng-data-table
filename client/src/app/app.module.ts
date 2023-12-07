@@ -11,6 +11,7 @@ import { SearchResultsComponent } from './search-results/search-results.componen
 import { SearchComponent } from './search/search.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { SearchFormComponent } from './search-form/search-form.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +21,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     UserComponent,
     UserTableComponent,
     SearchResultsComponent,
-    SearchComponent
+    SearchComponent,
+    SearchFormComponent
   ],
   imports: [
     BrowserModule,
