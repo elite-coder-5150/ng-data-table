@@ -14,7 +14,7 @@ export class SearchComponent implements OnInit {
   searchResults: string[] = [];
   constructor(private searchService: SearchService) { }
 
-  // TODO: fix this code because the code the chatgpt is not working.
+
   ngOnInit(): void {
       this.searchSubjector
         .pipe(
@@ -23,10 +23,12 @@ export class SearchComponent implements OnInit {
           switchMap((query: string) => this.searchService.search(query)))
           .subscribe((results => {
             console.log(results);
-          }))
+        }));
   }
 
-  onSearch(query: string) {
-    this.searchSubjector.next(query);
+  onSearch() {
+    this.searchService.search(this.query).subscribe((results => {
+      this.searchResults = results;
+    }))
   }
 }
