@@ -1,9 +1,6 @@
-<div>
-    <input
-        type="text"
-        placeholder="Search..."
-        [(ngModel)]="search"
-        (input)="onSearch(query)"/>
-
+<div class="search-form-container">
+    <ng-search-form></ng-search-form>
+</div>
+<div class="search-results-container">
     <ng-search-results [results]="searchResults"></ng-search-results>
 </div>
