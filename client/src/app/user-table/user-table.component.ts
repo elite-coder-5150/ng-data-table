@@ -67,7 +67,7 @@ export class UserTableComponent implements OnInit {
       .pipe(
         tap((users) => {
           if (this.users.length) { 
-            this.users = users;
+            // this.users = users;
           }
         }), catchError(error => {
           console.error(error);
