@@ -61,3 +61,10 @@ values ('robert graf', 'online', now());
 
 select uo.*
 from `online_users` as uo;
+use `datatable`;
+alter table `users`
+    add column `password` varchar(255) not null after `name`;
+
+use `datatable`;
+alter table `users`
+    add column `confPass` varchar(255) not null after `password`;
