@@ -1,0 +1,29 @@
+@import "../../global-styles/vars";
+
+.table-card {
+    width: 1216px;
+    margin: 96px auto  0 auto;
+    box-shadow: $box-shadow;
+}
+.user-table {
+    width: 100%;
+    display: table;
+
+    thead {
+        tr th {
+            text-transform: capitalize;
+            font-weight: normal;
+            font-size: 14px;
+            text-align: left;
+            &:nth-child(0) {
+                max-width: 282px;
+            }
+        }
+    }
+
+    tbody {
+        td {
+           
+        }
+    }
+}
