@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
 import { AppComponent } from './app.component';
+
 import { DataTableComponent } from './data-table/data-table.component';
 import { CustomCheckboxComponent } from './custom-checkbox/custom-checkbox.component';
 import { PaginationComponent } from './pagination/pagination.component';
@@ -14,7 +15,6 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SearchFormComponent } from './search-form/search-form.component';
 import { IsCheckedDirective } from './directives/is-checked.directive';
 import { EditUserComponent } from './user/edit-user/edit-user.component';
-import { AddUserComponent } from './user/add-user/add-user.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 @NgModule({
@@ -30,7 +30,6 @@ import { RegisterComponent } from './register/register.component';
     SearchFormComponent,
     IsCheckedDirective,
     EditUserComponent,
-    AddUserComponent,
     LoginComponent,
     RegisterComponent
   ],
